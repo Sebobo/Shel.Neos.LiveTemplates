@@ -1,0 +1,29 @@
+<templateSet group="Neos">
+  <template name="Prototype" value="prototype($vendor$:$type$.$name$) &lt; prototype($parent$) {&#10;    renderer = afx`&#10;    `&#10;}" description="A new prototype" toReformat="false" toShortenFQNames="true">
+    <variable name="vendor" expression="" defaultValue="Shel.Site" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="Component" alwaysStopAt="true" />
+    <variable name="name" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <variable name="parent" expression="" defaultValue="Neos.Fusion:Component" alwaysStopAt="true" />
+    <context>
+      <option name="NEOSFUSION" value="true" />
+    </context>
+  </template>
+  <template name="prop" value="$prop$ = ${q(node).property('$prop$')}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="prop" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="NEOSFUSION" value="true" />
+    </context>
+  </template>
+  <template name="editable" value="$prop$ = Neos.Neos:Editable {&#10;    property = '$prop$'&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="prop" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="NEOSFUSION" value="true" />
+    </context>
+  </template>
+  <template name="debug" value="renderer.@process.debug = Neos.Fusion:Debug.Console {&#10;    value = ${$value$}&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="value" expression="" defaultValue="props" alwaysStopAt="true" />
+    <context>
+      <option name="NEOSFUSION" value="true" />
+    </context>
+  </template>
+</templateSet>
