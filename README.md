@@ -6,10 +6,10 @@ This repository provides several live templates for [Neos CMS](https://www.neos.
 
 ### The easy way
 
-1. Go to Preferences | Tools | Settings Repository
+1. Go to `Preferences` › `Tools` › `Settings Repository`
 2. Add Read-only Source https://github.com/Sebobo/Shel.Neos.LiveTemplates
 3. Restart PhpStorm.
-4. To see all templates, go to Preferences | Live Templates and expand the Template Group.
+4. To see all templates, go to `Preferences` › `Editor` › `Live Templates` and expand the Template Group.
 
 ### Manual install
 
